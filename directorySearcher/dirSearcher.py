@@ -430,39 +430,48 @@ def openFolder(folder,c):
     downloadsP = r"C:\Users\Larry OG\Downloads"
     
     if folder == "1" and c ==  'o':
-        return os.startfile(elementP)
+        os.startfile(elementP)
+        # return welcome()
     elif folder == '1' and c != 'o':
         return elementP
     elif folder == '2' and c ==  'o':
-        return os.startfile(seagatep)
+        os.startfile(seagatep)
+        # return welcome()
     elif folder == '2'and c != 'o':
         return seagatep
     elif folder == '3' and c ==  'o':
-        return os.startfile(toshibaP)
+        os.startfile(toshibaP)
+        # return welcome()
     elif folder == '3'and c != 'o':
         return toshibaP
     elif folder == '4' and c ==  'o':
-        return os.startfile(seagateVP)
+        os.startfile(seagateVP)
+        # return welcome()
     elif folder == '4'and c != 'o':
         return seagateVP
     elif folder == '5' and c ==  'o':
-        return os.startfile(toshibaVP)
+        os.startfile(toshibaVP)
+        # return welcome()
     elif folder == '5'and c != 'o':
         return toshibaVP
     elif folder == '6' and c ==  'o':
-        return os.startfile(appProjectsP)
+        os.startfile(appProjectsP)
+        # return welcome()
     elif folder == '6'and c != 'o':
         return appProjectsP
     elif folder == '7' and c ==  'o':
-        return os.startfile(documentsp)
+        os.startfile(documentsp)
+        # return welcome()
     elif folder == '7'and c != 'o':
         return documentsp
     elif folder == '8' and c ==  'o':
-        return os.startfile(downloadsP)
+        os.startfile(downloadsP)
+        # return welcome()
     elif folder == '8'and c != 'o':
         return downloadsP
     elif c ==  'o':
-        return os.startfile(folder)
+        os.startfile(folder)
+    return welcome()
     
         
 def getFolder (c):
