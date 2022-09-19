@@ -4,7 +4,7 @@ from tqdm import tqdm
 from hachoir.parser import createParser
 from hachoir.metadata import extractMetadata
 import pyprobe
-from ffprobe import FFProbe
+#sfrom ffprobe import FFProbe
 from tinytag import TinyTag
 from colorama import init, Fore, Back, Style
 import math
@@ -420,10 +420,10 @@ def openFolder(folder,c):
     # documents = 'doc'
     # downloads = 'down'
     
-    elementP = 'J:\Film420\TorrentData'
+    elementP = 'E:\Film420\TorrentData'
     seagatep = 'L:\Stuff'
     toshibaP = r'I:\Users\Tyler'
-    seagateVP = 'L:\Stuff\FILM 420'
+    seagateVP = 'F:\Stuff\Film420'
     toshibaVP = r'I:\Users\Tyler\Documents\FrostWire\Torrent Data'
     appProjectsP = r'C:\Users\Larry OG\Documents\Apps'
     documentsp = r'C:\Users\Larry OG\Documents'
@@ -556,6 +556,7 @@ def welcome():
                    "Enter ( d ) if you would like to check for duplicates in 2 directories: \n" +
                    "Enter ( o ) if you would like to open folder(s) \n"+
                    "Enter ( c ) if you would like to cancel\n")
+    # Make a choice to search based on resolution 
     if choice == 's':
         # path = input('Enter the path you would like to search in:')
         paths = getFolder(choice)
